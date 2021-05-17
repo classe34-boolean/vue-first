@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Primo live-coding con Vue</title>
+    </head>
+    <body>
+        <div id="root">
+            <input type="text" v-model="nome" placeholder="Inserisci qui il tuo nome">
+            <input type="text" v-model="cognome" placeholder="Inserisci qui il tuo cognome">
+
+            <p :class="colorClass">Ciao <strong>{{ nome }} {{ cognome }}</strong>!</p>
+
+
+            <button @click="cambiaColore">Cambia colore</button>
+            <button @click="saluta">Saluta</button>
+            <button @click="saluta2">Saluta, versione console.log</button>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
